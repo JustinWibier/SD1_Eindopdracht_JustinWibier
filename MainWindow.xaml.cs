@@ -29,5 +29,14 @@ namespace SoftwareDevelopment1_Eindopdracht
         {
 
         }
+
+
+
+        private void enter_Click(object sender, RoutedEventArgs e)
+        {
+            Index index = new Index();
+            index.Show();
+            this.Close();
+        }
     }
 }

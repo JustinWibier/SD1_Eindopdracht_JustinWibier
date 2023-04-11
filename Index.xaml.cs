@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SoftwareDevelopment1_Eindopdracht
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Index.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Index : Window
     {
-        public Page1()
+        public Index()
         {
             InitializeComponent();
         }
