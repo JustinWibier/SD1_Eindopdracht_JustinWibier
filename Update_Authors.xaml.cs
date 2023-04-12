@@ -10,33 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SoftwareDevelopment1_Eindopdracht
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Update_Authors.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Update_Authors : Window
     {
-        public MainWindow()
+        public Update_Authors()
         {
             InitializeComponent();
         }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-
-
-        private void enter_Click(object sender, RoutedEventArgs e)
+        private void Btn_Back_Click(object sender, RoutedEventArgs e)
         {
             Index index = new();
             index.Show();
-
             this.Close();
         }
     }
