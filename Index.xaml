@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SoftwareDevelopment1_Eindopdracht"
         mc:Ignorable="d"
-        Title="Index" Height="450" Width="550">
+        Title="Index" Height="445" Width="940">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF0F0F0F" Offset="0.981"/>
@@ -13,10 +13,14 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <Button Content="boek toevoegen" HorizontalAlignment="Left" Margin="119,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
-        <Button Content="boek verwijderen" HorizontalAlignment="Left" Margin="311,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
-        <Button Content="boekenlijst" HorizontalAlignment="Left" Margin="311,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
-        <Button Content="boek updaten" HorizontalAlignment="Left" Margin="119,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Add" Content="boek toevoegen" Click="Btn_Add_Click" HorizontalAlignment="Left" Margin="48,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Delete" Content="boek verwijderen" Click="Btn_Delete_Click" HorizontalAlignment="Left" Margin="240,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_List" Content="boekenlijst" Click="Btn_List_Click" HorizontalAlignment="Left" Margin="240,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Update" Content="boek updaten" Click="Btn_Update_Click" HorizontalAlignment="Left" Margin="48,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Update_Authors" Content="auteurs updaten" Click="Btn_Update_Authors_Click" HorizontalAlignment="Left" Margin="595,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_List_Authors" Content="auteurs lijst" Click="Btn_List_Authors_Click" HorizontalAlignment="Left" Margin="779,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Delete_Authors" Content="auteurs verwijderen" Click="Btn_Delete_Authors_Click" HorizontalAlignment="Left" Margin="779,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Add_Authors" Content="auteurs toevoegen" Click="Btn_Add_Authors_Click" HorizontalAlignment="Left" Margin="595,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
 
     </Grid>
 </Window>
