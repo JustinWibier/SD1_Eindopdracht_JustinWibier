@@ -14,6 +14,12 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="Btn_Back" Content="Terug" Click="Btn_Back_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
+        <TextBox x:Name="Auth_Name" HorizontalAlignment="Left" Margin="330,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Height="29" FontSize="14"/>
+        <TextBox x:Name="Auth_Infix" HorizontalAlignment="Left" Margin="330,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Height="29" FontSize="14"/>
+        <TextBox x:Name="Auth_Lastname" HorizontalAlignment="Left" Margin="330,253,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="196" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Height="29" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="240,180,0,0" TextWrapping="Wrap" Text="Voornaam(en)" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="240,253,0,0" TextWrapping="Wrap" Text="Achternaam" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="240,217,0,0" TextWrapping="Wrap" Text="Tussenvoegsel" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

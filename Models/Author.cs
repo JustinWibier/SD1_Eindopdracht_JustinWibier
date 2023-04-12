@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SoftwareDevelopment1_Eindopdracht.Models
 {
-    class Author
+    public class Author
     {
+        public string Name { get; set; }
+        public string Lastname { get; set; }
+        public string? Infix { get; set; }
+        public int Author_Id { get; set; }
     }
 }

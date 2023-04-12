@@ -7,13 +7,25 @@
         mc:Ignorable="d"
         Title="Add_Authors" Height="450" Width="800">
     <Grid>
+        
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="1"/>
                 <GradientStop Color="#FF414141" Offset="0"/>
             </LinearGradientBrush>
         </Grid.Background>
+        
         <Button x:Name="Btn_Back" Content="Terug" Click="Btn_Back_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
+        
+        <TextBlock HorizontalAlignment="Center" Margin="0,-3,0,0" TextWrapping="Wrap" Text="Hier Voeg je nieuwe Auteurs toe" VerticalAlignment="Top" Height="48" Width="520" Foreground="#FF90FF82" FontSize="36"/>
+        
+        <TextBox x:Name="Auth_Name" HorizontalAlignment="Center" Margin="0,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Height="29" FontSize="14"/>
+        <TextBox x:Name="Auth_Infix" HorizontalAlignment="Center" Margin="0,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Height="29" FontSize="14"/>
+        <TextBox x:Name="Auth_Lastname" HorizontalAlignment="Center" Margin="0,268,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="196" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Height="29" FontSize="14"/>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="212,195,0,0" TextWrapping="Wrap" Text="Voornaam(en)" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="212,268,0,0" TextWrapping="Wrap" Text="Achternaam" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="212,232,0,0" TextWrapping="Wrap" Text="Tussenvoegsel" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

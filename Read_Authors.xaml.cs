@@ -29,5 +29,10 @@ namespace SoftwareDevelopment1_Eindopdracht
             index.Show();
             this.Close();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
