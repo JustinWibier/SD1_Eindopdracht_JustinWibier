@@ -24,9 +24,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="14,233,0,0" TextWrapping="Wrap" Text="Voornaam(en)" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,306,0,0" TextWrapping="Wrap" Text="Achternaam" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="14,270,0,0" TextWrapping="Wrap" Text="Tussenvoegsel" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="104,343,0,0" TextWrapping="Wrap" Text="{Binding SelectedAuthor.Author_Id}" Foreground="#FF90FF82" Height="28" VerticalAlignment="Top" Width="14"/>
-        <Button x:Name="Btn_Submit" Content="update" Click="Btn_Submit_Click" HorizontalAlignment="Left" Margin="236,343,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
-        <ListBox DisplayMemberPath="Name "  SelectedItem="{Binding SelectedAuthor}" Margin="400,32,62,32" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" ItemsSource="{Binding Allauthors}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="104,343,0,0" TextWrapping="Wrap" Text="{Binding SelectedAuthor.Id}" Foreground="#FF90FF82" Height="28" VerticalAlignment="Top" Width="14"/>
+        <ListBox Margin="400,32,62,32" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00"/>
+        <DataGrid ItemsSource="{Binding Allauthors}" SelectedItem="{Binding SelectedAuthor}" Margin="439,50,101,50"/>
+        <Button Command="{Binding Save_Author}" x:Name="Btn_Save_Click" Content="Opslaan"  HorizontalAlignment="Left" Margin="236,343,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
+        <TextBlock HorizontalAlignment="Left" Margin="104,343,0,0" TextWrapping="Wrap" Text="{Binding SelectedAuthor.Id}" Foreground="#FF90FF82" Height="28" VerticalAlignment="Top" Width="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="77,344,0,0" TextWrapping="Wrap" Text="ID" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
 
     </Grid>

@@ -3,6 +3,7 @@ using SoftwareDevelopment1_Eindopdracht.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,13 +15,14 @@ namespace SoftwareDevelopment1_Eindopdracht.Viewmodels
     {
         public Author SelectedAuthor { get; set; }
         public ObservableCollection<Author> Allauthors  { get; set; }
-
         public ICommand AddNew_Author { get; set; }
-
         public ICommand Delete_Author { get; set; }
-
+        public ICommand Save_Author { get; set; }
         public Author author { get; set; }
 
+        private Author_Context _db;
+
+        
         public Update_Authors_ViewModel()
         {
             author = new Author
@@ -30,22 +32,17 @@ namespace SoftwareDevelopment1_Eindopdracht.Viewmodels
                 Lastname = "new",
             };
 
-            Allauthors = new ObservableCollection<Author>
-            {
-                new Author
-                {
-                    Name= "Yumi",
-                    Lastname= "Argento"
-                },
-                new Author
-                {
-                    Name= "Astra",
-                    Infix= "von",
-                    Lastname= "Lichtenstein",
-                }
-            };
+
+
             AddNew_Author = new RelayCommand(Add_New_Author);
             Delete_Author = new RelayCommand(Delete_author);
+            Save_Author = new RelayCommand(Save_author);
+
+            _db = new Author_Context();
+
+            _db.Authors.Load();
+
+           Allauthors = _db.Authors.Local.ToObservableCollection();
 
         }
 
@@ -61,10 +58,18 @@ namespace SoftwareDevelopment1_Eindopdracht.Viewmodels
 
         private void Delete_author()
         {
+
             SelectedAuthor.Name = "[DELETED]";
             SelectedAuthor.Infix = "_";
             SelectedAuthor.Lastname = "_";
         }
 
+        private void Save_author()
+        {
+            _db.SaveChanges();
+        }
+
+
+        
     }
 }

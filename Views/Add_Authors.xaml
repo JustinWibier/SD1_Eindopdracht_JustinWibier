@@ -27,8 +27,9 @@
         <TextBlock HorizontalAlignment="Left" Margin="22,256,0,0" TextWrapping="Wrap" Text="Voornaam(en)" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="33,329,0,0" TextWrapping="Wrap" Text="Achternaam" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="22,293,0,0" TextWrapping="Wrap" Text="Tussenvoegsel" Foreground="#FF90FF82" Height="29" VerticalAlignment="Top"/>
-        <Button Command="{Binding AddNew_Author}" x:Name="Btn_Submit" Content="voeg toe"  HorizontalAlignment="Left" Margin="178,363,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
-        <ListBox DisplayMemberPath="Name " Margin="408,55,54,9" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" ItemsSource="{Binding Allauthors}"/>
-
+        <Button Command="{Binding AddNew_Author}" x:Name="Btn_Submit" Content="voeg toe"  HorizontalAlignment="Left" Margin="112,363,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
+        <ListBox Margin="408,55,54,9" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00"/>
+        <DataGrid ItemsSource="{Binding Allauthors}" Margin="447,73,93,27"/>
+        <Button Command="{Binding Save_Author}" x:Name="Btn_Save_Click" Content="Opslaan"  HorizontalAlignment="Left" Margin="244,363,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
     </Grid>
 </Window>

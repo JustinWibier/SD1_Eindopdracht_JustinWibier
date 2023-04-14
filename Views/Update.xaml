@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SoftwareDevelopment1_Eindopdracht"
+        xmlns:VMS="clr-namespace:SoftwareDevelopment1_Eindopdracht.Viewmodels"
         mc:Ignorable="d"
         Title="Update" Height="450" Width="800">
+    <Window.DataContext>
+        <VMS:CRUD_Books_ViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -14,6 +18,15 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="Btn_Back" Content="Terug" Click="Btn_Back_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
+        <TextBox  Text="{Binding SelectedBooks.Title}" HorizontalAlignment="Left" Margin="110,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Height="35" FontSize="14"/>
+        <TextBox  Text="{Binding SelectedBooks.Description}" HorizontalAlignment="Left" Margin="110,261,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="209" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Height="83" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="4,224,0,0" TextWrapping="Wrap" Text="Titel" Foreground="#FF90FF82" Height="34" VerticalAlignment="Top" Width="80"/>
+        <TextBlock HorizontalAlignment="Left" Margin="4,269,0,0" TextWrapping="Wrap" Text="Beschrijving" Foreground="#FF90FF82" Height="33" VerticalAlignment="Top" Width="68"/>
+        <ListBox Margin="420,3,18,21" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00"/>
+        <DataGrid ItemsSource="{Binding Allbooks}" SelectedItem="{Binding SelectedBooks}" Margin="461,23,60,41"/>
+        <Button Command="{Binding Save_Book}" x:Name="Btn_save_Copy" Content="Save"  HorizontalAlignment="Left" Margin="180,349,0,0" VerticalAlignment="Top" Height="31" Width="68" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,343,0,0" TextWrapping="Wrap" Text="{Binding SelectedBooks.Id}" Foreground="#FF90FF82" Height="35" VerticalAlignment="Top" Width="19"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,344,0,0" TextWrapping="Wrap" Text="ID" Foreground="#FF90FF82" Height="36" VerticalAlignment="Top" Width="15"/>
 
     </Grid>
 </Window>
