@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SoftwareDevelopment1_Eindopdracht.Models;
+using SoftwareDevelopment1_Eindopdracht.Viewmodels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,21 +17,29 @@ using System.Windows.Shapes;
 namespace SoftwareDevelopment1_Eindopdracht
 {
     /// <summary>
-    /// Interaction logic for Add_Authors.xaml
+    /// Interaction logic for Update_Authors.xaml
     /// </summary>
-    public partial class Add_Authors : Window
+    public partial class Update_Authors : Window
     {
-        public Add_Authors()
+
+
+        public Update_Authors()
         {
             InitializeComponent();
+
+            DataContext = new Update_Authors_ViewModel();
         }
 
         private void Btn_Back_Click(object sender, RoutedEventArgs e)
         {
             Index index = new();
             index.Show();
-
             this.Close();
+        }
+
+        private void Btn_Submit_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -15,19 +15,23 @@ using System.Windows.Shapes;
 namespace SoftwareDevelopment1_Eindopdracht
 {
     /// <summary>
-    /// Interaction logic for Update_Authors.xaml
+    /// Interaction logic for Add_Authors.xaml
     /// </summary>
-    public partial class Update_Authors : Window
+    public partial class Add_Authors : Window
     {
-        public Update_Authors()
+        public Add_Authors()
         {
             InitializeComponent();
         }
+
         private void Btn_Back_Click(object sender, RoutedEventArgs e)
         {
             Index index = new();
             index.Show();
+
             this.Close();
         }
+
+
     }
 }
