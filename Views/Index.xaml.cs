@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftwareDevelopment1_Eindopdracht.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -85,6 +86,14 @@ namespace SoftwareDevelopment1_Eindopdracht
             Add_Authors add_authors = new();
             add_authors.Show();
                 
+            this.Close();
+        }
+
+        private void Btn_Combine_Click(object sender, RoutedEventArgs e)
+        {
+            Combine combine = new();
+            combine.Show();
+
             this.Close();
         }
     }

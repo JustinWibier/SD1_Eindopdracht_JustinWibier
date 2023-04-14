@@ -17,10 +17,11 @@
         <Button x:Name="Btn_Delete" Content="boek verwijderen" Click="Btn_Delete_Click" HorizontalAlignment="Left" Margin="240,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
         <Button x:Name="Btn_List" Content="boekenlijst" Click="Btn_List_Click" HorizontalAlignment="Left" Margin="240,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
         <Button x:Name="Btn_Update" Content="boek updaten" Click="Btn_Update_Click" HorizontalAlignment="Left" Margin="48,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
-        <Button x:Name="Btn_Update_Authors" Content="auteurs updaten" Click="Btn_Update_Authors_Click" HorizontalAlignment="Left" Margin="595,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
-        <Button x:Name="Btn_List_Authors" Content="auteurs lijst" Click="Btn_List_Authors_Click" HorizontalAlignment="Left" Margin="779,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
-        <Button x:Name="Btn_Delete_Authors" Content="auteurs verwijderen" Click="Btn_Delete_Authors_Click" HorizontalAlignment="Left" Margin="779,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
-        <Button x:Name="Btn_Add_Authors" Content="auteurs toevoegen" Click="Btn_Add_Authors_Click" HorizontalAlignment="Left" Margin="595,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Update_Authors" Content="auteurs updaten" Click="Btn_Update_Authors_Click" HorizontalAlignment="Left" Margin="585,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_List_Authors" Content="auteurs lijst" Click="Btn_List_Authors_Click" HorizontalAlignment="Left" Margin="769,40,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Delete_Authors" Content="auteurs verwijderen" Click="Btn_Delete_Authors_Click" HorizontalAlignment="Left" Margin="769,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Add_Authors" Content="auteurs toevoegen" Click="Btn_Add_Authors_Click" HorizontalAlignment="Left" Margin="585,246,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
+        <Button x:Name="Btn_Combine" Content="combineer autheurs en boeken" Click="Btn_Combine_Click" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Height="206" Width="188" Background="#FF626060" BorderBrush="White" Foreground="#FF69FF55"/>
 
     </Grid>
 </Window>

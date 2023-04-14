@@ -1,6 +1,4 @@
-﻿using SoftwareDevelopment1_Eindopdracht.Models;
-using SoftwareDevelopment1_Eindopdracht.Viewmodels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,32 +12,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace SoftwareDevelopment1_Eindopdracht
+namespace SoftwareDevelopment1_Eindopdracht.Views
 {
     /// <summary>
-    /// Interaction logic for Update_Authors.xaml
+    /// Interaction logic for Combine.xaml
     /// </summary>
-    public partial class Update_Authors : Window
+    public partial class Combine : Window
     {
-
-
-        public Update_Authors()
+        public Combine()
         {
             InitializeComponent();
-
-
         }
 
         private void Btn_Back_Click(object sender, RoutedEventArgs e)
         {
-            Index index = new();
+            Index index = new Index();
             index.Show();
+
             this.Close();
-        }
-
-        private void Btn_Submit_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
