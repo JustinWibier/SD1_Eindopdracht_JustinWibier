@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Add_Authors" Height="450" Width="800">
     <Window.DataContext>
-        <VMS:Update_Authors_ViewModel/>
+        <VMS:CRUD_Books_ViewModel/>
     </Window.DataContext>
     <Grid>
 

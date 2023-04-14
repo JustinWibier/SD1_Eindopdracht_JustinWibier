@@ -12,26 +12,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace SoftwareDevelopment1_Eindopdracht
+namespace SoftwareDevelopment1_Eindopdracht.Views
 {
     /// <summary>
-    /// Interaction logic for Delete_Authors.xaml
+    /// Interaction logic for Combine.xaml
     /// </summary>
-    public partial class Delete_Authors : Window
+    public partial class Combine : Window
     {
-        public Delete_Authors()
+        public Combine()
         {
             InitializeComponent();
         }
 
         private void Btn_Back_Click(object sender, RoutedEventArgs e)
         {
-            Index index = new();
+            Index index = new Index();
             index.Show();
 
             this.Close();
         }
-
-
     }
 }

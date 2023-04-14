@@ -31,7 +31,8 @@ namespace SoftwareDevelopment1_Eindopdracht.Models
             Builder.Entity<Book>().HasMany(b => b.Authors).WithMany(a => a.Books).UsingEntity(pivotTable => 
             pivotTable.HasData(
                new {BooksId = 1, AuthorsId = 1},
-               new { BooksId = 1, AuthorsId = 2 })
+               new { BooksId = 1, AuthorsId = 2 }
+               )
             );
         }
     }

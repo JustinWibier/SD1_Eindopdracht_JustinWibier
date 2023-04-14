@@ -27,7 +27,7 @@ namespace SoftwareDevelopment1_Eindopdracht
         {
             InitializeComponent();
 
-            DataContext = new Update_Authors_ViewModel();
+
         }
 
         private void Btn_Back_Click(object sender, RoutedEventArgs e)

@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="Delete_Authors" Height="450" Width="800">
     <Window.DataContext>
-        <VMS:Update_Authors_ViewModel/>
+        <VMS:CRUD_Books_ViewModel/>
     </Window.DataContext>
     <Grid>
         <Grid.Background>
@@ -28,7 +28,7 @@
         <Button Command="{Binding Delete_Author}" x:Name="Btn_Submit" Content="delete"  HorizontalAlignment="Left" Margin="112,366,0,0" VerticalAlignment="Top" Height="26" Width="64" Background="#FF4A4A4A" BorderBrush="#FF16BB00" Foreground="#FF90FF82"/>
         <ListBox Margin="421,55,41,9" Foreground="#FF90FF82" Background="#FF4A4A4A" BorderBrush="#FF16BB00"/>
         <DataGrid SelectedItem="{Binding SelectedAuthor}" ItemsSource="{Binding Allauthors}"  Margin="460,73,80,27"/>
-        <TextBlock Foreground="#FF90FF82" Background="#FF4A4A4A" HorizontalAlignment="Left" Margin="112,258,0,0" TextWrapping="Wrap" Text="{Binding SelectedAuthor.Name}" VerticalAlignment="Top" Width="196" Height="27"/>
+        <TextBlock Foreground="#FF90FF82" Background="#FF4A4A4A" HorizontalAlignment="Left" Margin="112,258,0,0" TextWrapping="Wrap" Text="{Binding SelectedAuthor.Name.}" VerticalAlignment="Top" Width="196" Height="27"/>
         <TextBlock Foreground="#FF90FF82" Background="#FF4A4A4A" HorizontalAlignment="Left" Margin="112,295,0,0" TextWrapping="Wrap" Text="{Binding SelectedAuthor.Infix}" VerticalAlignment="Top" Width="196" Height="27"/>
         <TextBlock Foreground="#FF90FF82" Background="#FF4A4A4A" HorizontalAlignment="Left" Margin="112,331,0,0" TextWrapping="Wrap" Text="{Binding SelectedAuthor.Lastname}" VerticalAlignment="Top" Width="196" Height="27"/>
     </Grid>
